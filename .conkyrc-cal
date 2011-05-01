@@ -1,0 +1,35 @@
+background no
+alignment tl
+gap_x 500
+gap_y 500
+
+use_xft yes
+xftfont Terminus:size=12
+xftalpha 1
+override_utf8_locale no
+
+update_interval 5.0
+
+
+own_window yes
+own_window_type desktop
+own_window_transparent YES
+#own_window_transparent no
+#own_window_colour C9C9C9
+own_window_hints undecorated,below#,sticky,skip_taskbar,skip_pager
+double_buffer yes
+no_buffers yes
+
+draw_shades no
+draw_outline no
+draw_borders no
+
+#default_color 2F1F1F
+default_color FFFFFF
+default_shade_color black
+default_outline_color black
+
+TEXT
+${color}Upcoming events:
+${color}${exec /usr/bin/when --noampm --styled_output --past=0}
+  
